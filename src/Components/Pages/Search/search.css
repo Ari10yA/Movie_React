@@ -1,13 +1,18 @@
 .Posi{
-    margin-top: 5%;
+    margin-top: .5rem;
 }
 .search {
     display: flex;
-    margin-top: 20px;
+    margin-top: 25px;
     margin: 15px 0;
   }
 
   .MuiTabs-flexContainer{
     display: flex;
     justify-content: center !important;
+  }
+
+  .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    background: white !important;
+    border-radius: 8px !important;
   }

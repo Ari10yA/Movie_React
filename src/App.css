@@ -2,11 +2,14 @@
   scroll-behavior: smooth;
 }
 
+body{
+  background: rgb(131, 131, 131);
+}
+
 .app {
   min-height: 100vh;
-  background-color: #ffffff;
   color: white;
-  padding-top: 130px;
+  padding-top: 150px;
   padding-bottom: 70px;
 }
 
@@ -21,16 +24,59 @@
   display: flex;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 2vw;
+  font-size: 2.5rem;
   padding: 4px;
   border-radius: 50px;
   color: rgb(132, 206, 255);
-  margin-top: 3%;
-  
 }
 
 @media (max-width: 1000px) {
-  .pageTitle {
-    font-size: 6.4vw;
-  }
+
+}
+
+
+.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root {
+  font-size: 1rem !important;
+  color: white !important;
+  font-weight: bolder !important;
+}
+
+.MuiBadge-colorPrimary {
+ background-color: rgb(253, 197, 76) !important;
+ color: black !important;
+ font-weight: bold !important;
+ padding: 12px !important;
+ font-family: "Montserrat", sans-serif !important;
+}
+
+.css-10y6fck-MuiButtonBase-root-MuiChip-root {
+  background: white !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: bold !important;
+  padding: 4px 12px !important;
+}
+
+.css-16lloyr-MuiBottomNavigation-root button span{
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: bold !important;
+}
+
+.css-16lloyr-MuiBottomNavigation-root {
+  background-color: #ffb193 !important;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  background: white !important;
+  border-radius: 8px !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  margin: 0 0.6rem !important;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  background: white !important;
+  border-radius: 8px !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  margin: 0 0.6rem !important;
 }

@@ -27,7 +27,6 @@ const Genres = ({
 
     const fetchGenres =async () => {
         const data =await axios.get(`https://api.themoviedb.org/3/genre/movie/list?api_key=3bb31d3641057cc786c0bbe31c2b8039&language=en-US`);
-        console.log(data.data.genres);
         setGenres(data.data.genres);
     }
 

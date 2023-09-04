@@ -1,19 +1,19 @@
 .styling{
   width: 90%;
   height: 80%;
-  backgroundColor: #39445a;
+  background-color: #39445a;
   border: 1px solid #282c34;
-  borderRadius: 10;
+  border-radius: 10;
   color: white;
 }
 
 .media {
     display: flex;
     flex-direction: column;
-    width: 200px;
-    padding: 5px;
-    margin: 5px 0;
-    background-color: #666566;
+    width: 250px;
+    padding: 10px;
+    margin: .3rem;
+    background-color: #ffffff;
     border-radius: 10px;
     position: relative;
   }
