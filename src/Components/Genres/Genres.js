@@ -1,6 +1,14 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 import { Chip } from "@mui/material";
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles({
+    button: {
+      fontWeight: "bold",
+      backgroundColor: "white"
+    }
+  });
 
 const Genres = ({
     selectedGenres,
@@ -10,6 +18,8 @@ const Genres = ({
     type,
     setPage
 }) => {
+
+    const classes = useStyles();
 
     const handleAdd = (genre) => {
         setselectedGenres([...selectedGenres, genre]);
@@ -42,10 +52,10 @@ const Genres = ({
     return(
         <div>         
              {selectedGenres && selectedGenres.map((genre) => (
-                <Chip label={genre.name} style={{ margin: 2 }} color="primary" key={genre.id} size='small' clickable onDelete={()=> handleRemove(genre)}/>
+                <Chip className={classes.button} label={genre.name} style={{ margin: 2 }} color="primary" key={genre.id} size='small' clickable onDelete={()=> handleRemove(genre)}/>
             ))}  
             {genres && genres.map((genre) => (
-                <Chip label={genre.name} style={{ margin: 2 }} key={genre.id} size='small' clickable onClick={()=>handleAdd(genre)}/>
+                <Chip className={classes.button} label={genre.name} style={{ margin: 2 }} key={genre.id} size='small' clickable onClick={()=>handleAdd(genre)}/>
             ))}    
         </div>
     );

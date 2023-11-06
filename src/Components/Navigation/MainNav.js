@@ -6,7 +6,7 @@ import MovieIcon from '@mui/icons-material/Movie';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 import YoutubeSearchedForIcon from '@mui/icons-material/YoutubeSearchedFor';
 import { useEffect } from 'react';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
@@ -18,6 +18,9 @@ const useStyles = makeStyles({
     zIndex: 100,
     fontWeight: "bold"
   },
+  button: {
+    fontWeight: "bold"
+  }
 });
 
 export default function SimpleBottomNavigation() {
@@ -50,20 +53,24 @@ export default function SimpleBottomNavigation() {
       >
         <BottomNavigationAction 
             label="Trending" 
-            icon={<TrendingUpIcon />}   
+            icon={<TrendingUpIcon />}  
+            className={classes.button}
         />      
         <BottomNavigationAction 
             label="Movies" 
-            icon={<MovieIcon />}   
+            icon={<MovieIcon />}  
+            className={classes.button}
         />
         <BottomNavigationAction 
             label="TV Series" 
             icon={<LiveTvIcon />} 
+            className={classes.button}
 
         />
         <BottomNavigationAction 
             label="Search" 
             icon={<YoutubeSearchedForIcon />} 
+            className={classes.button}            
 
         />
       </BottomNavigation>

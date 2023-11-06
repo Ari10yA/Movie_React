@@ -3,9 +3,3 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  
-  @media (max-width: 1000px) {
-    .pageTitle {
-      font-size: 2.5rem;
-    }
-  }

@@ -1,9 +1,10 @@
 import "./Header.css";
+import logo from "../../Media/logo-movie-nation.png";
 
 const Header = () => {
   return (
     <span onClick={() => window.scroll(0, 0)} className="header">
-      🎦MOVIE NATION🎦
+      <img src={logo} className="header-img" alt="Header"></img>
     </span>
   );
 };

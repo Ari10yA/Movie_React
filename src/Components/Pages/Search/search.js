@@ -6,7 +6,13 @@ import axios from "axios";
 import Content from "../../Content/Content";
 import Pagechange from "../../PageChange/Pagechange";
 import "./search.css";
+import { makeStyles } from "@material-ui/core";
 
+const useStyles = makeStyles({
+  button: {
+    fontWeight: "bold"
+  }
+});
 
 const Search = (props) => {
 
@@ -15,6 +21,8 @@ const Search = (props) => {
     const [searchText, setSearchText] = useState("");
     const [content, setContent] = useState();
     const [pageCount, setpageCount] = useState();
+
+    const classes = useStyles();
 
     const fetchSearch = async () => {
         try {
@@ -56,6 +64,7 @@ const Search = (props) => {
             </div>
 
             <Tabs 
+            className={classes.button}
             value={type} 
             indicatorColor="primary" 
             textColor="primary"
@@ -66,8 +75,8 @@ const Search = (props) => {
             style={{paddingBottom: 5}}
             >
           
-            <Tab style={{ width: "50%" }} label="Search Movies"/>
-            <Tab style={{ width: "50%" }} label="Search TV Series"/>
+            <Tab className={classes.button} style={{ width: "50%" }} label="Search Movies"/>
+            <Tab className={classes.button} style={{ width: "50%" }} label="Search TV Series"/>
             </Tabs>
 
             <div className="trending">

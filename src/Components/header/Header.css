@@ -4,19 +4,24 @@
     position: fixed;
     display: flex;
     justify-content: center;
-    background-color: #ffb193;
+    background-color: #ff8d61;
     font-family: 'Fira Sans', sans-serif;
     font-size: 5vw;
-    padding-bottom: 15px;
     box-shadow: 0px 1px 5px black;
     color: white;
     z-index: 100;
     font-weight: bold;
   }
-  
-  @media (max-width: 1000px) {
-    .header {
-      padding-top: 15px;
-      font-size: 6.4vw;
+
+  .header-img{
+    height: 3rem;
+    margin: 1rem;
+  }
+
+
+  @media (min-width: 600px) {
+    .header-img{
+      height: 4rem;
+      margin: 1.2rem
     }
   }
